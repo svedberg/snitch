@@ -1,0 +1,107 @@
+body {
+  font-family: "Comic Sans MS", sans-serif;
+  padding:0;
+  margin:0;
+  background: #000;
+  color: #fff;
+}
+
+.wrapper {
+  padding:12vw 7vw 7vw;
+  margin:0;
+  text-align:center;
+  font-size: 1.25rem;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 2.5rem;
+}
+
+.info {
+  margin-bottom: 3rem;
+}
+
+.button-wrapper {
+  position: relative;
+  display: block;
+  background: crimson;
+  width:300px;
+  margin:0 auto;
+}
+
+.wrapper-2 .button-wrapper {
+  background: orangered;
+}
+
+button {
+  font-family: "Comic Sans MS", sans-serif;
+  display:block;
+  background: transparent;
+  color:#fff;
+  text-decoration:underline;
+  letter-spacing: 0.25rem;
+  width:300px;
+  height:300px;
+  font-size: 2rem;
+  border:0;
+  z-index:20;
+}
+
+input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width:100%;
+  height:100%;
+  z-index:100;
+}
+
+.wrapper-2, .reset {
+  display:none;
+}
+.active .reset {
+  display:block;
+  margin-top:0;
+}
+.reset a {
+  color:#fff;
+}
+
+@media only screen and (orientation: landscape) {
+  .info {
+    display:none;
+  }
+  .wrapper {
+    width:600px;
+    margin:2vw auto;
+    padding:0;
+    display:flex;
+  }
+  .wrapper > div {
+    width:300px;
+    height:100vh;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+    position: relative;
+  }
+  .wrapper-2 {
+    display:block;
+  }
+  .button-wrapper {
+    position: absolute;
+    top:0;
+    z-index:1;
+  }
+  .tune {
+    display:none;
+  }
+  .active .tune {
+    display:block;
+    position: relative;
+    z-index:2;
+    height:300px;
+  }
+}

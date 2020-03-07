@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="/comicsans.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>  
+  <body>
+    
+    <div class="wrapper">
+      
+      <div class="info">
+        <p>Have you always wondered which snack is the grooviest? Or which condiment is the most goth?</p>
+        <p>Use this barcode scanner to find out – and judge all kinds of products by what really counts: their soundtracks.</p>
+        <p>To compare two different products, just flip your phone.</p>
+      </div>
+      
+      <div class="wrapper-1">
+        
+        <div class="tune">
+        </div>      
+        
+        <div class="button-wrapper" id="btn">
+          <button class="btn">Scan!</button>
+          <input type="file" accept="image/*" capture="camera"/>
+        </div>
+        
+        <p class="reset">Reset</p>
+        <p id="coderes"></p>
+        
+      </div>
+      
+      <div class="wrapper-2 active">
+        
+        <div class="tune">
+          <iframe src="https://open.spotify.com/embed/track/3eL8yBOsM6WnI7D8TKY2rN" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>      
+        
+        <div class="button-wrapper" id="btn2">
+          <button class="btn2">Scan!</button>
+          <input type="file" accept="image/*" capture="camera"/>
+        </div>
+        
+        <p class="reset">Reset</p>
+        <p id="coderes2"></p>
+        
+      </div>
+    
+      
+    </div>
+    
+    <script src="/jq.min.js"></script>
+    <script src="/spotify-web-api.js"></script>
+    <script src="/quagga.min.js"></script>
+    <script src="/script.js" defer></script>
+
+  </body>
+</html>
