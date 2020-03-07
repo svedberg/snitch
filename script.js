@@ -72,10 +72,10 @@ $(function() {
   });
 
   $(".wrapper-1 .reset").on("click", function(e) {
-    this.removeClass('active');
+    $('.wrapper-1').toggleClass('active');
   });
 
   $(".wrapper-2 .reset").on("click", function(e) {
-    this.removeClass('active');
+    $('.wrapper-2').toggleClass('active');
   });
 });
